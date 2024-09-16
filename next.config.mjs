@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
-export default {
-    images:{
-      remotePatterns:[
-        {
-          protocol: 'https',
-          hostname: "images.pexels.com"
-        }
-      ]
-    }
-  }
-  
-  module.exports = nextConfig
-  
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
+    ],
+  },
+};
+
+// Use ES Module export
+export default nextConfig;
